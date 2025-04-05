@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export default function InteractiveCards() {
-    const [cursor, setCursor] = useState({ x: 0, y: 0 });
-    const [hovered, setHovered] = useState(null);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+const [cursor, setCursor] = useState({ x: 0, y: 0 });
+
+    // const [hovered, setHovered] = useState(null);
     const floatingIcons = [
         { src: "/proj/code.svg", size: 120, x: "10%", y: "20%" },
         { src: "/proj/code.svg", size: 80, x: "80%", y: "30%" },
@@ -78,10 +80,10 @@ export default function InteractiveCards() {
     ];
 
     useEffect(() => {
-        const updateCursor = (e) => {
+        const updateCursor = (e: PointerEvent) => {
             setCursor({ x: e.clientX, y: e.clientY });
-            document.documentElement.style.setProperty('--x', e.clientX);
-            document.documentElement.style.setProperty('--y', e.clientY);
+            document.documentElement.style.setProperty('--x', e.clientX.toString());
+            document.documentElement.style.setProperty('--y', e.clientY.toString());
         };
 
         window.addEventListener('pointermove', updateCursor);

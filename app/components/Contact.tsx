@@ -4,10 +4,10 @@ import { useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { ArrowRight, Github, Linkedin, } from "lucide-react";
 
 export default function Contact() {
-  const [hovered, setHovered] = useState("");
+  // const [hovered, setHovered] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,7 +40,7 @@ export default function Contact() {
       if (data.success) {
         setFormData({ name: "", email: "", phone: "", message: "" });
       }
-    } catch (error) {
+    } catch {
       setResponseMessage("Failed to send email.");
     } finally {
       setLoading(false);
@@ -68,8 +68,9 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          LET'S <br className="hidden md:block" /> GET IN <br className="hidden md:block" /> TOUCH
+          LET&apos;S <br className="hidden md:block" /> GET IN <br className="hidden md:block" /> TOUCH
         </motion.h2>
+
 
         {/* Contact Form */}
         <form className="space-y-6 w-full" onSubmit={handleSubmit}>
@@ -131,8 +132,8 @@ export default function Contact() {
             href="https://github.com/aariz4ever"
             target="_blank"
             rel="noopener noreferrer"
-            onMouseEnter={() => setHovered("GitHub")}
-            onMouseLeave={() => setHovered("")}
+            // onMouseEnter={() => setHovered("GitHub")}
+            // onMouseLeave={() => setHovered("")}
           >
             <Github size={28} className="hover:text-[#8900f2] transition-colors" />
           </a>
@@ -140,8 +141,8 @@ export default function Contact() {
             href="https://www.linkedin.com/in/mohamed-aariz-0b71a7275/"
             target="_blank"
             rel="noopener noreferrer"
-            onMouseEnter={() => setHovered("LinkedIn")}
-            onMouseLeave={() => setHovered("")}
+            // onMouseEnter={() => setHovered("LinkedIn")}
+            // onMouseLeave={() => setHovered("")}
           >
             <Linkedin size={28} className="hover:text-[#8900f2] transition-colors" />
           </a>

@@ -56,6 +56,7 @@ export default function HeroSection() {
     timeoutId = setTimeout(typeNextSentence, 2000);
 
     return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ideaIndex]);
 
   return (

@@ -26,7 +26,10 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-300 bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-300 ${
+        scrolled ? "bg-black/70 shadow-lg" : "bg-transparent"
+      }`}
+      
     >
       {/* Custom Scroll Progress Bar */}
       <div className="w-full absolute top-0 left-0 h-1 bg-transparent">
