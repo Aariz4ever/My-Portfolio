@@ -1,38 +1,113 @@
-Visit this website (hosted): https://aariz-portfolio.vercel.app/
+---
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Mohamed Aariz — Developer Portfolio
 
-## Getting Started
+A modern, animated, **Next.js portfolio** with a **video background**, **purple accent theme**, **glowing effects**, and smooth **Framer Motion animations**.
+Includes interactive sections built using **shadcn/ui**, **Tailwind CSS**, and deployed on **Vercel**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+🔗 **Portfolio URL:** *[https://aariz-portfolio.vercel.app/](https://aariz-portfolio.vercel.app/)*
+
+---
+
+## 🎨 Features
+
+### 🟣 **UI / Theme**
+
+* Full-screen **video background**
+* **Black + Purple** futuristic theme
+* **Glassmorphism** & glowing accents
+* Smooth gradients
+* Responsive layout (mobile + desktop)
+
+### ⚡ **Interactions**
+
+* Framer Motion animations
+* Hover effects
+* Animated hero section
+* Section fade-ins & transitions
+
+### 📂 **Sections Included**
+
+* Hero (with typing name + title)
+* About (skills with hover animations)
+* Skills grid (shadcn UI cards)
+* Projects section
+* Contact section
+* Blurred transparent navbar
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+
+* **Next.js**
+* **React**
+* **Tailwind CSS**
+* **shadcn/ui components**
+* **Framer Motion**
+* **TypeScript**
+
+### **Design / Effects**
+
+* Video background
+* Glass UI + glowing shadows
+* Interactive animations
+* Custom hover effects
+
+### **Deployment**
+
+* **Vercel**
+
+---
+
+## 📦 Installation & Setup (Local Development)
+
+### 1️⃣ Clone the repository
+
+```sh
+git clone https://github.com/Aariz4ever/your-portfolio.git
+cd your-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Add required assets
 
-## Learn More
+Place your background video inside:
 
-To learn more about Next.js, take a look at the following resources:
+```
+public/background.mp4
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(or whatever filename you used)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4️⃣ Run the project locally
 
-## Deploy on Vercel
+```sh
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Portfolio will run at:
+👉 [http://localhost:3000](http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deployment (Vercel)
+
+---
+
+## 👨‍💻 Author
+
+**Mohamed Aariz**
+Developer • AI Enthusiast • Full-Stack Engineer
+
+---
